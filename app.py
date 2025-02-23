@@ -55,6 +55,16 @@ def report():
     """Report page for false positives/negatives"""
     return render_template('report.html')
 
+@app.route('/view-reports')
+def view_reports():
+    """View submitted reports"""
+    try:
+        with open('reports.json', 'r') as f:
+            reports = json.load(f)
+        return jsonify(reports)
+    except FileNotFoundError:
+        return jsonify([])
+
 @app.route('/analyze', methods=['POST'])
 def analyze_url():
     """Analyze URL for phishing detection"""
