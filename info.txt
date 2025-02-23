@@ -1,0 +1,1 @@
+These URLs aren't real phishing sites—they are just examples of patterns commonly seen in phishing URLs. They should not be used to harm anyone. Instead, they can help you understand how attackers manipulate URLs to trick users into clicking on them. Always be cautious, and use these examples only for ethical testing in controlled environments.
